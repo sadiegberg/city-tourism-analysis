@@ -1,18 +1,21 @@
 # Global City Tourism Analysis
-### Which cities are thriving, growing, or underperforming — and why?
+### Which cities are thriving, growing, or underperforming and why?
 
 ## Overview
 
-A data science project analyzing tourism health across 23 cities worldwide
+A data science project analyzing tourism progression and health across 23 cities worldwide
 using real API data, machine learning clustering, and a composite scoring
 index. The project identifies which cities are thriving in tourism, which
-are growing, and which are underperforming — and quantifies what drives
+are growing, and which are underperforming, and quantifies what drives
 the difference.
 
 **Tools:** Python, Jupyter Notebook, Plotly, XGBoost, scikit-learn
-**Data sources:** Open-Meteo Archive API (weather), World Bank Open Data
-API (infrastructure), Numbeo (cost of living), UNWTO (tourism momentum),
-Global Peace Index (safety)
+**Data sources:**
+- [Open-Meteo Archive API](https://archive-api.open-meteo.com) — weather data
+- [World Bank Open Data](https://data.worldbank.org/indicator/IT.NET.USER.ZS) — internet penetration
+- [Numbeo Cost of Living](https://www.numbeo.com/cost-of-living/) — affordability index
+- [UNWTO](https://www.unwto.org/tourism-statistics/key-tourism-statistics) — tourism momentum
+- [Global Peace Index](https://www.visionofhumanity.org/maps/#/) — safety scores
 
 ## Cities Analyzed
 
@@ -40,18 +43,18 @@ Each city is scored across 8 dimensions:
 ## Key Findings
 
 Marrakech ranks number 1 despite being less globally recognized than Paris
-or Bangkok — driven by near-perfect weather appeal (94.3), strong
+or Bangkok, driven by near-perfect weather appeal (94.3), strong
 affordability (70), and accelerating momentum (68).
 
 Reykjavik ranks number 18 despite being one of the world's trendiest
 destinations. Its weather score (32.0) and affordability score (12)
 heavily penalize it in the composite index.
 
-Tel Aviv fell to Underperforming — reflecting the dramatic tourism
-contraction following the October 2023 conflict. Momentum score of 45
+Tel Aviv fell to Underperforming, reflecting the dramatic tourism
+contraction following the October 2023 event. Momentum score of 45
 is the lowest in the dataset.
 
-Digital visibility is king — Bishkek has a 95/100 outdoor score and
+Digital visibility is king. Bishkek has a 95/100 outdoor score and
 is one of the most affordable cities in the dataset, yet ranks last due
 to near-zero global search interest.
 
@@ -65,7 +68,7 @@ Affordability weighting slightly undervalues high-cost high-demand cities
 like Paris, New York, and Singapore.
 Country-level World Bank data was applied at city level which introduces
 imprecision.
-Data reflects a 2023 snapshot — geopolitical events can shift rankings rapidly.
+Data reflects a 2023 snapshot: geopolitical events can shift rankings rapidly.
 
 ## How to Run
 
